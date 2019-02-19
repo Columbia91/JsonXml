@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Serialization.Json;
+using System.Xml.Serialization;
 using System.IO;
 
 namespace JsonXmlHomework
@@ -17,13 +14,25 @@ namespace JsonXmlHomework
             User user3 = new User("mr.Smith", "Coollife88$", "smittytime@gmail.com", "+77071072727");
 
             User[] users = new User[] { user1, user2, user3 };
-
+            
             DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(User[]));
-
-            using (FileStream fs = new FileStream(@"C:\\people.txt", FileMode.OpenOrCreate))
+            
+            using (FileStream fs = new FileStream("people.json", FileMode.OpenOrCreate)) // папка bin -> debug
             {
                 jsonFormatter.WriteObject(fs, users);
+
+                Console.WriteLine("JSON Serialization passed successfully");
             }
+
+            XmlSerializer xmlFormatter = new XmlSerializer(typeof(User[]));
+
+            using (FileStream fs = new FileStream("users.xml", FileMode.OpenOrCreate)) // папка bin -> debug
+            {
+                xmlFormatter.Serialize(fs, users);
+
+                Console.WriteLine("XML Serialization passed successfully");
+            }
+            
         }
     }
 }
