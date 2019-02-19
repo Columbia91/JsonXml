@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ArrayOfUser>
+  <User>
+    <Login>Qwerty</Login>
+    <Password>1234As!</Password>
+    <Email>developer@gmail.com</Email>
+    <PhoneNumber>+77021021213</PhoneNumber>
+  </User>
+  <User>
+    <Login>Maestro</Login>
+    <Password>#Piano55</Password>
+    <Email>musicman80@mail.com</Email>
+    <PhoneNumber>+77782880808</PhoneNumber>
+  </User>
+  <User>
+    <Login>mr.Smith</Login>
+    <Password>Coollife88$</Password>
+    <Email>smittytime@gmail.com</Email>
+    <PhoneNumber>+77071072727</PhoneNumber>
+  </User>
+</ArrayOfUser>

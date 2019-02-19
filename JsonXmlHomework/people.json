@@ -1,0 +1,23 @@
+{
+"Users":
+  [
+    {
+      "Email": "developer@gmail.com",
+      "Login": "Qwerty",
+      "Password": "1234As!",
+      "PhoneNumber": "+77021021213"
+    },
+    {
+      "Email": "musicman80@mail.com",
+      "Login": "Maestro",
+      "Password": "#Piano55",
+      "PhoneNumber": "+77782880808"
+    },
+    {
+      "Email": "smittytime@gmail.com",
+      "Login": "mr.Smith",
+      "Password": "Coollife88$",
+      "PhoneNumber": "+77071072727"
+    }
+  ]
+}
